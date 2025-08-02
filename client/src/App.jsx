@@ -12,6 +12,7 @@ import CompetitionPage from "./pages/CompetitionPage.jsx"
 import CreateJobPage from "./pages/CreateJobPage.jsx"
 import CreateCompetitionPage from "./pages/CreateCompetitionPage.jsx"
 import ResetPassPage from "./pages/ResetPassPage.jsx"
+import TermsPage from "./pages/TermsPage.jsx"
 
 axios.defaults.baseURL = import.meta.env.VITE_APP_BASE_URL
 axios.defaults.withCredentials = true
@@ -53,6 +54,7 @@ const App = () => {
 						<Route path="/competitions" element={<CompetitionPage />} />
 						<Route path="/competitions/create" element={<CreateCompetitionPage />} />
 						<Route path="/:userID/reset-password" element={<ResetPassPage />} />
+						<Route path="/terms" element={<TermsPage />} />
 					</Route>
 				</Routes>
 			</BrowserRouter>
